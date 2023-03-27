@@ -370,11 +370,14 @@ restart.addEventListener('click',()=>{
 //     Goback();
 //     }
 // })
+is_opps_selected = false;
+
 Xbtn.addEventListener('click',()=>{
      isit_x_turn=true;
      startscreen.style.display='none'
      cpu_uc= "&#x4f;";
      cpu_bc='yellow_base';
+     
      
 })
 Obtn.addEventListener('click',()=>{
@@ -401,6 +404,6 @@ player2.addEventListener('click',()=>{
 
 chooseopponent();
 
-
+// make if ststment to run play code it has to be true if apponent is preseleted only//
 
 play();

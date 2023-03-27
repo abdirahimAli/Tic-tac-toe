@@ -60,23 +60,28 @@ button {
   }
   .results{
     position: absolute;
-    width: 600px;
-    height: 190px;
-    color: aliceblue;
-    background-color: #0f2027 ;
-    display:flex;
+    width: 400px;
+    height: 150px;
+    margin-top: -40%;
+      color: aliceblue;
+      background-color: #0f2027 ;
+      display:block;
+      flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -30%;
+   
   }
   .results p{
     margin-left: 20%;
-    font-size: 30px;
+    font-size: 20px;
   }
   .results button{
-    margin-left:250px ;
+    margin-left:150px ;
+    margin-top: -10px;
     background-color: aqua;
-    font-size: small;
+    font-size: 10px;
+    /* width: 8px;
+    height: 2px; */
   }
   .turn{
     margin-left: 5%;
@@ -90,9 +95,9 @@ transform: translateY(2px);
 
 .startscreen{
   position: absolute;
-  width: 600px;
-    height: 190px;
-    margin-top: -30%;
+  width: 400px;
+  height: 150px;
+  margin-top: -35%;
     color: aliceblue;
     background-color: #0f2027 ;
     display:block;
@@ -117,9 +122,9 @@ transform: translateY(2px);
 
 .chooseopponent{
   position: absolute;
-  width: 600px;
-  height: 190px;
-  margin-top: -30%;
+  width: 400px;
+  height: 150px;
+  margin-top: -35%;
     color: aliceblue;
     background-color: #0f2027 ;
     display:block;
@@ -139,3 +144,88 @@ transform: translateY(2px);
 #player2_opps{
   background-color: rgb(20, 228, 235);
 }
+
+/* /////////////////////////////////////////////////screen size reduced/////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:400px)  {
+.chooseopponent{
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  margin-top: -99%;
+    color: aliceblue;
+    background-color: #0f2027 ;
+    display:block;
+    flex-direction: column;
+    
+}
+.chooseopponent p {
+  /* margin-top: 20%; */
+  margin-left: 25%;
+}
+.chooseopponent button{
+  margin-left: 15%;
+  font-size: 14px;
+  /* width: 100px; */
+}
+#CPU{
+  background-color: rgb(20, 228, 235);
+}
+#player2_opps{
+  background-color: rgb(20, 228, 235);
+}
+/* /////////////////////////////////////////// */
+
+.startscreen{
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  margin-top: -99%;
+    color: aliceblue;
+    background-color: #0f2027 ;
+    display:block;
+    flex-direction: column;
+    
+}
+.startscreen p {
+  /* margin-top: 20%;*/
+  margin-left: 25%; 
+}
+.startscreen button{
+  margin-left: 15%;
+  font-size: 14px;
+}
+#X{
+  background-color: green;
+}
+#O{
+  background-color: yellow;
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+.results{
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  margin-top: -99%;
+    color: aliceblue;
+    background-color: #0f2027 ;
+    display:block;
+    flex-direction: column;
+ 
+}
+.results p{
+  margin-left: 20%;
+  font-size: 20px;
+}
+.results button{
+  margin-left:120px ;
+  margin-top: -10px;
+  background-color: aqua;
+  font-size: 10px;
+  /* width: 8px;
+  height: 2px; */
+}
+}
+
