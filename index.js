@@ -360,14 +360,14 @@ CPU.addEventListener("click", () => {
   chooseopponent_display.style.display = "none";
   displaystartscreen();
   Time_to_paly = true;
-//    play();
+
 });
 
 player2.addEventListener("click", () => {
   opponent = "player2";
   chooseopponent_display.style.display = "none";
   displaystartscreen();
-//    play();
+
 });
 
 chooseopponent();
